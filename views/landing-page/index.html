@@ -4,10 +4,211 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A</title>
+    <title>Millobooks</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="../../dist/output.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <h2 class="text-indigo-500">Hallo</h2>
+  <body class="body-bg px-6 screen:px-10">
+    <section id="home">
+      <div class="container max-w-full mt-12 flex flex-col tabletlg:flex-row tabletlg:gap-6">
+        <div class="p-6 rounded-2xl shadow-lg flex flex-col items-center w-full laptop:flex-row-reverse" style="background: linear-gradient(94.84deg, #4f46e5 2.28%, #5850dd 48.39%)">
+          <img src="../../src/images/rocket.svg" alt="rocket" class="laptop:w-72" />
+          <div class="">
+            <h2 class="text-2xl font-semibold tracking-tighter text-white">Sejubooks</h2>
+            <p class="mt-4 text-white laptop:text-lg screen:w-[70%]">Sejubooks is a comprehensive online platform dedicated to providing reliable information about books to book lovers all around the world.</p>
+            <div class="flex items-center mt-6">
+              <span class="text-2xl text-main bg-[#AFAAFF] p-[6px] rounded-full shadow-lg"><i class="fa-solid fa-users"></i></span>
+              <p class="ml-4 text-lg font-medium tracking-tight text-white">Join our community</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center w-full tabletlg:w-1/2" style="background: #a5cbb3">
+          <img src="" alt="alarm" class="w-32" />
+          <div class="p-4">
+            <h2 class="text-2xl font-semibold tracking-tighter text-dark text-center mt-2" id="current-time">4 : 30</h2>
+            <div class="flex items-center text-xl text-dark mt-4">
+              <i class="fa-solid fa-location-dot mr-2"></i>
+              <p id="location">Bali, Indonesia</p>
+            </div>
+          </div>
+          <button class="bg-dark w-full text-white h-12 rounded-lg shadow-lg tracking-tight font-semibold">Set reading time</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRENDING BOOKS -->
+    <section id="search" class="mt-20 screen:px-10">
+      <div class="flex gap-4 flex-wrap justify-between">
+        <h2 class="text-2xl font-semibold tracking-tighter">Check this <span class="font-bold text-main">trending books</span> 😎</h2>
+        <p class="underline tracking-tight">Looking for something🤷‍♂️?</p>
+      </div>
+      <div class="container bg-red-50 mt-10 flex flex-wrap gap-8 justify-between mx-auto">
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10" id="books-box">
+          <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
+          <div class="mt-6">
+            <h2 class="uppercase text-lg font-bold text-main tracking-tight">PENULIS</h2>
+            <p class="capitalize mb-8 mt-2 text-xl font-semibold text-dark tracking-tight w-64">Ini Judul Bukunya Dibuat Panjang Biar Keren Sama Mau Nyoba</p>
+            <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
+            <div class="flex gap-6 mt-10">
+              <button class="px-4 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
+              <button class="px-4 h-12 rounded-full text-dark font-medium">Save to library <i class="fa-solid fa-bookmark"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../../src/js/script.js"></script>
   </body>
 </html>
