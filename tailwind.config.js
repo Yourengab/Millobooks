@@ -1,6 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./views/landing-page/index.html", "./views/dashboard/index.html", "./views/favorites/index.html", "./views/login/index.html", "./views/saved/index.html", "./views/sign-up/index.html", "./src/js/script.js"],
+  content: [
+    "./views/landing-page/index.html",
+    "./views/dashboard/index.html",
+    "./views/favorites/index.html",
+    "./views/login/index.html",
+    "./views/saved/index.html",
+    "./views/sign-up/index.html",
+    "./views/add/index.html",
+    "./views/update/index.html",
+    "./src/js/script.js",
+  ],
   darkMode: "class",
   theme: {
     // container: {

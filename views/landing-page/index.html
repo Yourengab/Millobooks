@@ -15,6 +15,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Slick Theme CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body-bg px-6 screen:px-10">
     <section id="home">
@@ -50,7 +67,7 @@
         <h2 class="text-2xl font-semibold tracking-tighter">Check this <span class="font-bold text-main">trending books</span> 😎</h2>
         <p class="underline tracking-tight">Looking for something🤷‍♂️?</p>
       </div>
-      <div class="container mt-10 flex flex-wrap gap-8 justify-between mx-auto">
+      <div class="container mt-10 flex flex-wrap gap-8 justify-between mx-auto max-w-full">
         <div class="mb-10 tabletlg:flex tabletlg:gap-8" id="books-box">
           <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
           <div class="mt-6">
@@ -96,7 +113,7 @@
         <input type="text" placeholder="Search books, titles" class="bg-[#E9E9E9] w-80 h-10 border hover:border-main px-6 rounded-lg shadow-lg mb-10 tablet:w-1/2 screen:w-[400px]" />
         <button class="bg-main h-10 w-10 text-white rounded-lg ml-4 hover:bg-dark transition ease-in-out"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
-      <div class="container mt-10 flex flex-wrap gap-8 justify-between mx-auto">
+      <div class="container mt-10 flex flex-wrap gap-8 justify-between mx-auto max-w-full">
         <div class="mb-10" id="books-box">
           <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
           <div class="mt-6">
@@ -135,6 +152,53 @@
         </div>
       </div>
     </section>
+
+    <div class="slider flex max-w-1/2">
+      <div class="slider-box">
+        <div class="slider-number">01</div>
+        <div class="slider-text">
+          <h2>Ingat goals mu</h2>
+          <p>Kalau kamu merasa jenuh dan ingin menyerah ingatlah tujuan awal mu untuk olahraga itu akan membuat mu sadar dan tetap konsisten</p>
+        </div>
+      </div>
+      <div class="slider-box">
+        <div class="slider-number">01</div>
+        <div class="slider-text">
+          <h2>Ingat goals mu</h2>
+          <p>Kalau kamu merasa jenuh dan ingin menyerah ingatlah tujuan awal mu untuk olahraga itu akan membuat mu sadar dan tetap konsisten</p>
+        </div>
+      </div>
+      <div class="slider-box">
+        <div class="slider-number">01</div>
+        <div class="slider-text">
+          <h2>Ingat goals mu</h2>
+          <p>Kalau kamu merasa jenuh dan ingin menyerah ingatlah tujuan awal mu untuk olahraga itu akan membuat mu sadar dan tetap konsisten</p>
+        </div>
+      </div>
+      <div class="slider-box">
+        <div class="slider-number">01</div>
+        <div class="slider-text">
+          <h2>Ingat goals mu</h2>
+          <p>Kalau kamu merasa jenuh dan ingin menyerah ingatlah tujuan awal mu untuk olahraga itu akan membuat mu sadar dan tetap konsisten</p>
+        </div>
+      </div>
+      <div class="slider-box">
+        <div class="slider-number">01</div>
+        <div class="slider-text">
+          <h2>Ingat goals mu</h2>
+          <p>Kalau kamu merasa jenuh dan ingin menyerah ingatlah tujuan awal mu untuk olahraga itu akan membuat mu sadar dan tetap konsisten</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CDNJS Slick -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../../src/js/script.js"></script>
   </body>
 </html>
