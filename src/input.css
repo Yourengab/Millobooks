@@ -9,4 +9,8 @@
   .body-bg {
     @apply bg-[#F1F1F1];
   }
+
+  .body-green {
+    @apply bg-[#A5CBB3];
+  }
 }
