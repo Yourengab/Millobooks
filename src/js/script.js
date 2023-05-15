@@ -9,9 +9,8 @@ setInterval(updateTime, 10);
 
 $(".slider").slick({
   dots: true,
-  infinite: true,
   speed: 300,
-  arrows: false,
+  arrows: true,
   slidesToShow: 3,
   slidesToScroll: 3,
   responsive: [
