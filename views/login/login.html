@@ -19,39 +19,52 @@
     />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <style>
-      @keyframes swipe {
-        0% {
-          transform: translateY(0%);
-        }
-        100% {
-          transform: translateY(-100%);
-        }
-      }
-
-      .swipe {
-        animation: swipe 1s ease-in-out;
-      }
-    </style>
   </head>
-  <body>
+  <body style="background-image: url(../../src/images/loginbg.jpg); background-repeat: no-repeat" class="backdrop-blur-md">
     <div id="loading" class="transition-all duration-[1500ms] flex justify-center items-center flex-col z-10 absolute w-full h-full" style="background: linear-gradient(119.1deg, #5951de 3.03%, #3931bc 97.09%)">
       <img id="loadingImg" src="../../src/images/rocket.svg" alt="" class="w-96 transition-all duration-[1500ms]" data-aos="fade-up" data-aos-duration="1000" />
       <h1 data-aos="fade-up" data-aos-duration="500" class="text-3xl font-semibold text-center text-white">Millobooks</h1>
-      <p data-aos="fade-up" data-aos-duration="800" class="mt-6 text-xl w-1/3 text-center text-white">
+      <p data-aos="fade-up" data-aos-duration="800" class="tablet:w-96 screen:w-1/3 mt-6 text-xl text-center text-white">
         Sejubooks is a comprehensive online platform dedicated to providing reliable information about books to book lovers all around the world.
       </p>
     </div>
+    <section id="login" class="px-6 flex items-center h-[100vh]">
+      <div class="container mx-auto max-w-full flex justify-evenly items-center gap-10">
+        <div class="bg-white w-fit px-8 py-10 shadow-xl rounded-xl tablet:px-10">
+          <h1 class="text-center text-2xl font-semibold tracking-tight">Sign in</h1>
+          <p class="text-paragraph text-center mx-auto mt-4 text-lg w-60">Login to access the best books collection in the world</p>
+          <form action="">
+            <div id="div-box" class="flex flex-col gap-4 mt-8">
+              <label for="username" class="text-lg text-dark"><i class="fa-solid fa-user mr-3"></i>Username</label>
+              <input type="text" id="username" name="username" class="rounded-lg py-2 tablet:border-b-4 px-4 w-72 bg-[#EAEAEA] laptop:w-96" />
+            </div>
+            <div id="div-box" class="flex flex-col gap-4 mt-8">
+              <label for="password" class="text-lg text-dark"><i class="fa-solid fa-eye-slash mr-3"></i>Password</label>
+              <input type="text" id="password" name="password" class="rounded-lg py-2 tablet:border-b-4 px-4 w-72 bg-[#EAEAEA] laptop:w-96" />
+            </div>
+            <button class="w-full bg-main h-12 shadow-lg mt-20 rounded-full text-white font-medium">Sign In</button>
+          </form>
+        </div>
+        <div class="hidden max-w-xl tablet:block">
+          <h1 class="font-semibold text-3xl text-white">Welcome to Millobooks, An Online Library Based in Indonesia.</h1>
+          <img src="../../src/images/desk.svg" class="min-w-lg" />
+          <div class="flex items-center mt-6">
+            <span class="text-2xl text-main bg-[#AFAAFF] p-[6px] rounded-full shadow-lg"><i class="fa-solid fa-users"></i></span>
+            <p class="ml-4 text-lg font-medium tracking-tight text-white">Join our community</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script>
       const loading = document.querySelector("#loading");
       const loadingImg = document.querySelector("#loadingImg");
       setTimeout(() => {
         loadingImg.removeAttribute("data-aos", "data-aos-duration");
         loadingImg.classList.add("-translate-y-[100%]");
-      }, 1500);
+      }, 2000);
       setTimeout(() => {
         loading.classList.add("-translate-y-[100%]");
-      }, 1600);
+      }, 2200);
     </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
