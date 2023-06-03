@@ -47,6 +47,7 @@
             </div>
           </div>
         </div>
+
         <div class="mt-6 p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center w-full tabletlg:w-1/2" style="background: #a5cbb3">
           <img src="" alt="alarm" class="w-32" />
           <div class="p-4">
@@ -68,7 +69,7 @@
         <p class="underline tracking-tight"><a href="#search">Looking for something🤷‍♂️?</a></p>
       </div>
 
-      <div class="container mt-10 slider max-w-full flex">
+      <div id="popular-books" class="container mt-10 slider max-w-full flex">
         <div class="mb-10 mx-2 slider-box" id="books-box">
           <img src="" alt="books" class="w-full bg-green-400 tablet:w-72 h-80 rounded-xl" />
           <div class="mt-10">
@@ -77,7 +78,7 @@
             <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
             <div class="flex gap-6 mt-10">
               <button class="px-6 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
-              <button class="bg-red-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
+              <button class="-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
             </div>
           </div>
         </div>
@@ -90,7 +91,7 @@
             <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
             <div class="flex gap-6 mt-10">
               <button class="px-6 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
-              <button class="bg-red-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
+              <button class="-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
             </div>
           </div>
         </div>
@@ -103,7 +104,7 @@
             <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
             <div class="flex gap-6 mt-10">
               <button class="px-6 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
-              <button class="bg-red-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
+              <button class="-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
             </div>
           </div>
         </div>
@@ -116,20 +117,21 @@
             <span class="py-2 px-4 bg-gray-300 rounded-full max-w-lg text-dark tracking-tight">Genre & Agak Panjang</span>
             <div class="flex gap-6 mt-10">
               <button class="px-6 bg-main rounded-full text-white h-12 font-medium">Synopsis</button>
-              <button class="bg-red-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
+              <button class="-500 px-6 h-12 rounded-full text-dark font-medium text-[14px]">Save to library <i class="fa-solid fa-bookmark ml-2"></i></button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="search" class="mt-20 screen:px-10">
+    <section id="search" class="mt-12 pt-12 screen:px-10">
       <h2 class="text-2xl tracking-tight font-semibold text-dark">Search your<span class="font-bold text-main"> favorites books😍</span></h2>
-      <div class="mt-4">
-        <input type="text" placeholder="Search books, titles" class="bg-[#E9E9E9] w-80 h-10 border hover:border-main px-6 rounded-lg shadow-lg mb-10 tablet:w-1/2 screen:w-[400px]" />
-        <button class="bg-main h-10 w-10 text-white rounded-lg ml-4 hover:bg-dark transition ease-in-out"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div class="mt-8">
+        <input id="search-box" type="text" placeholder="Search books, titles" class="bg-[#E9E9E9] w-80 h-10 border hover:border-main px-6 rounded-lg shadow-lg mb-10 tablet:w-1/2 screen:w-[400px]" />
+        <button id="search-btn" class="bg-main h-10 w-10 text-white rounded-lg ml-4 hover:bg-dark transition ease-in-out"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
-      <div class="container mt-10 flex flex-wrap gap-8 justify-between mx-auto max-w-full">
+
+      <div class="searchBox container mt-10 flex flex-wrap gap-8 justify-between mx-auto max-w-full">
         <div class="mb-10" id="books-box">
           <img src="" alt="books" class="bg-green-400 w-64 h-80 rounded-xl" />
           <div class="mt-6">
