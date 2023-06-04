@@ -644,20 +644,12 @@ video {
   margin-top: 1rem;
 }
 
-.mt-40{
-  margin-top: 10rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
 }
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-32{
-  margin-top: 8rem;
 }
 
 .block{
@@ -815,6 +807,10 @@ video {
   gap: 2rem;
 }
 
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -888,6 +884,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-dangerLight{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 195 195 / var(--tw-bg-opacity));
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -903,6 +904,11 @@ video {
 
 .p-\[6px\]{
   padding: 6px;
+}
+
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-4{
@@ -933,6 +939,21 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-12{
@@ -1013,6 +1034,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-danger{
+  --tw-text-opacity: 1;
+  color: rgb(255 81 81 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1130,6 +1156,11 @@ video {
   .tablet\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .tablet\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

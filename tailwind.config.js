@@ -28,6 +28,8 @@ module.exports = {
         main: "#4F46E5",
         dark: "#27272A",
         dimmed: "#E1E1E1",
+        danger: "#FF5151",
+        dangerLight: "#F9C3C3",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
