@@ -1,19 +1,79 @@
-// *********************** UPDATE TIME EVERY MINUTE *********************** \\
-function updateTime() {
-  const timeText = document.querySelector("#current-time");
-  const currentTime = new Date();
+// *********************** SLIDER CONFIG *********************** \\
+$(".slider").slick({
+  dots: true,
+  speed: 300,
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
-  timeText.innerText = currentTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-}
-
-updateTime();
-setInterval(updateTime, 10);
-
-// *********************** NAVBAR TOGGLE *********************** \\
-const hamburgerMenu = document.querySelector("#hamburger");
+// *********************** CHECK IF WINDOW IS SCROLLED *********************** \\
 const navbar = document.querySelector("#navbar");
-hamburgerMenu.addEventListener("click", function () {
-  navbar.classList.toggle("hidden");
+window.addEventListener("scroll", function () {
+  navbar.classList.remove("translate-y-[300%]");
+  navbar.classList.add("translate-y-[0%]");
+
+  // *********************** CHECK IF USER AFK *********************** \\
+  let inactivityTime = 0;
+  const afkThreshold = 3000; // User afk limit time
+
+  function resetTimer() {
+    inactivityTime = 0;
+  }
+
+  function checkInactivity() {
+    inactivityTime += 1000; // Increase the time counter by 1 second
+    if (inactivityTime >= afkThreshold) {
+      const navbar = document.querySelector("#navbar");
+
+      navbar.classList.add("translate-y-[300%]");
+      navbar.classList.remove("translate-y-[0%]");
+    }
+  }
+
+  // Reset the timer on user activity
+  window.addEventListener("mousemove", resetTimer);
+  window.addEventListener("keydown", resetTimer);
+  window.addEventListener("scroll", resetTimer);
+
+  // Check for inactivity every second
+  setInterval(checkInactivity, 1000);
+
+  // *********************** UPDATE TIME EVERY MINUTE *********************** \\
+  function updateTime() {
+    const timeText = document.querySelector("#current-time");
+    const currentTime = new Date();
+
+    timeText.innerText = currentTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  }
+
+  updateTime();
+  setInterval(updateTime, 10);
 });
 // *********************** EVENT WHEN USER SEARCH A BOOK *********************** \\
 const searchBtn = document.querySelector("#search-btn");
@@ -66,37 +126,3 @@ function mappedBooksInContainer(bookList) {
   </div>
 </div>`;
 }
-
-// *********************** SLIDER CONFIG *********************** \\
-$(".slider").slick({
-  dots: true,
-  speed: 300,
-  arrows: false,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 720,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});

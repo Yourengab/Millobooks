@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Millobooks</title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="../../dist/output.css" />
     <!-- FONT AWESOME -->
@@ -34,36 +43,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body-bg px-6 screen:px-10 overflow-x-hidden">
-    <header class="fixed z-10 bottom-8 left-0 right-0 mx-6 p-4 flex justify-between items-center mt-8 bg-white rounded-xl shadow-lg">
-      <h1 class="text-2xl font-semibold tracking-tight text-dark">Sejubooks</h1>
-      <div id="hamburger" class="">
-        <span class="block w-12 h-[5px] rounded-full bg-main mb-2"></span>
-        <span class="block w-12 h-[5px] rounded-full bg-main mb-2"></span>
-        <span class="block w-12 h-[5px] rounded-full bg-main"></span>
-      </div>
-      <nav id="navbar" class="absolute bg-white bottom-0 py-8 px-8 top-0 right-0 rounded-xl shadow-xl border border-dark hidden">
-        <ul class="flex flex-col gap-6">
+    <header>
+      <nav id="navbar" class="translate-y-[300%] transition-all duration-300 ease-in-out fixed z-10 right-0 left-0 mx-6 py-4 px-6 bottom-8 bg-white rounded-full shadow-xl tablet:max-w-sm tablet:mx-auto tabletlg:hidden">
+        <ul class="flex justify-evenly gap-6">
           <li class="text-xl font-medium text-dark">
-            <a href=""><i class="fa-solid fa-house mr-2"></i>Home</a>
+            <a href=""><i class="fa-solid fa-house"></i></a>
           </li>
-          <hr />
           <li class="text-xl font-medium text-dark">
-            <a href=""><i class="fa-solid fa-users mr-2"></i>Community</a>
+            <a href=""><i class="fa-solid fa-users"></i></a>
           </li>
-          <hr />
 
           <li class="text-xl font-medium text-dark">
-            <a href=""><i class="fa-solid fa-magnifying-glass mr-2"></i>Search</a>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
           </li>
-          <hr />
 
           <li class="text-xl font-medium text-dark">
-            <a href=""><i class="fa-solid fa-heart mr-2"></i>Favorites</a>
+            <a href=""><i class="fa-solid fa-heart"></i></a>
           </li>
-          <hr />
 
           <li class="text-xl font-medium text-dark">
-            <a href=""><i class="fa-solid fa-bookmark mr-2"></i>Saved</a>
+            <a href=""><i class="fa-solid fa-bookmark"></i></a>
           </li>
         </ul>
       </nav>
@@ -162,11 +161,11 @@
     <section id="search" class="mt-12 mb-20 pt-12 screen:px-10">
       <h2 class="text-2xl tracking-tight font-semibold text-dark">Search your<span class="font-bold text-main"> favorites books😍</span></h2>
       <div class="mt-8">
-        <input id="search-box" type="text" placeholder="Search books, titles" class="bg-[#E9E9E9] w-80 h-10 border hover:border-main px-6 rounded-lg shadow-lg mb-10 tablet:w-1/2 screen:w-[400px]" />
+        <input id="search-box" type="text" placeholder="Search books, titles" class="bg-[#E9E9E9] w-64 h-10 border hover:border-main px-6 rounded-lg shadow-lg mb-10 tablet:w-1/2 screen:w-[400px]" />
         <button id="search-btn" class="bg-main h-10 w-10 text-white rounded-lg ml-4 hover:bg-dark transition ease-in-out"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
 
-      <div class="searchBox container mt-10 flex flex-wrap gap-8 justify-between mx-auto max-w-full">
+      <div class="searchBox container mt-10 flex justify-center flex-wrap gap-8 mx-auto max-w-full tablet:justify-between">
         <div class="bg-dangerLight w-full p-4 text-danger text-center text-md font-medium shadow-lg rounded-lg tablet:text-xl">Please type somethin in the search box</div>
       </div>
     </section>
@@ -179,6 +178,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JS -->
     <script src="../../src/js/script.js"></script>
   </body>
 </html>
