@@ -9,6 +9,12 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 10);
 
+// *********************** NAVBAR TOGGLE *********************** \\
+const hamburgerMenu = document.querySelector("#hamburger");
+const navbar = document.querySelector("#navbar");
+hamburgerMenu.addEventListener("click", function () {
+  navbar.classList.toggle("hidden");
+});
 // *********************** EVENT WHEN USER SEARCH A BOOK *********************** \\
 const searchBtn = document.querySelector("#search-btn");
 const inputKeyword = document.querySelector("#search-box");

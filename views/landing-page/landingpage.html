@@ -34,6 +34,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body-bg px-6 screen:px-10 overflow-x-hidden">
+    <header class="fixed z-10 bottom-8 left-0 right-0 mx-6 p-4 flex justify-between items-center mt-8 bg-white rounded-xl shadow-lg">
+      <h1 class="text-2xl font-semibold tracking-tight text-dark">Sejubooks</h1>
+      <div id="hamburger" class="">
+        <span class="block w-12 h-[5px] rounded-full bg-main mb-2"></span>
+        <span class="block w-12 h-[5px] rounded-full bg-main mb-2"></span>
+        <span class="block w-12 h-[5px] rounded-full bg-main"></span>
+      </div>
+      <nav id="navbar" class="absolute bg-white bottom-0 py-8 px-8 top-0 right-0 rounded-xl shadow-xl border border-dark hidden">
+        <ul class="flex flex-col gap-6">
+          <li class="text-xl font-medium text-dark">
+            <a href=""><i class="fa-solid fa-house mr-2"></i>Home</a>
+          </li>
+          <hr />
+          <li class="text-xl font-medium text-dark">
+            <a href=""><i class="fa-solid fa-users mr-2"></i>Community</a>
+          </li>
+          <hr />
+
+          <li class="text-xl font-medium text-dark">
+            <a href=""><i class="fa-solid fa-magnifying-glass mr-2"></i>Search</a>
+          </li>
+          <hr />
+
+          <li class="text-xl font-medium text-dark">
+            <a href=""><i class="fa-solid fa-heart mr-2"></i>Favorites</a>
+          </li>
+          <hr />
+
+          <li class="text-xl font-medium text-dark">
+            <a href=""><i class="fa-solid fa-bookmark mr-2"></i>Saved</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <section id="home">
       <div class="container max-w-full mt-12 flex flex-col tabletlg:flex-row tabletlg:gap-6">
         <div class="px-12 py-6 rounded-2xl shadow-lg flex flex-col items-center w-full laptop:flex-row-reverse" style="background: linear-gradient(94.84deg, #4f46e5 2.28%, #5850dd 48.39%)">
