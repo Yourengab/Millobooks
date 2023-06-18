@@ -25,17 +25,17 @@ function query($query)
     return $rows;
 }
 
-// ********************* Functions CRUD ********************* //
-function add($data)
+// ********************* Functions CRUD Books ********************* //
+function addBook($data)
 {
     global $conn;
-    $title = htmlspecialchars($data["judul"]);
-    $writer = htmlspecialchars($data["penulis"]);
-    $numberOfPages = htmlspecialchars($data["halaman"]);
+    $title = htmlspecialchars($data["nama_buku"]);
+    $writer = htmlspecialchars($data["pengarang"]);
+    $numberOfPages = htmlspecialchars($data["jumlah_halaman"]);
     $publisher = htmlspecialchars($data["penerbit"]);
-    $year = htmlspecialchars($data["tahun"]);
-    $category = htmlspecialchars($data["kategori"]);
+    $year = htmlspecialchars($data["tahun_terbit"]);
     $synopsis = htmlspecialchars($data["sinopsis"]);
+    $category = htmlspecialchars($data["kategori"]);
     $pict = htmlspecialchars($data["gambar"]);
 
     $query = "INSERT INTO books VALUES (null, '$title', '$writer', '$numberOfPages', '$publisher', '$year', '$synopsis, '$category', '$pict')";
@@ -91,29 +91,29 @@ function uploadPict()
     return $newFileName;
 }
 
-function update($data)
+function updateBook($data)
 {
     global $conn;
     $codeBook = htmlspecialchars($data["kode_buku"]);
-    $title = htmlspecialchars($data["judul"]);
-    $writer = htmlspecialchars($data["penulis"]);
-    $numberOfPages = htmlspecialchars($data["halaman"]);
+    $title = htmlspecialchars($data["nama_buku"]);
+    $writer = htmlspecialchars($data["pengarang"]);
+    $numberOfPages = htmlspecialchars($data["jumlah_halaman"]);
     $publisher = htmlspecialchars($data["penerbit"]);
-    $year = htmlspecialchars($data["tahun"]);
-    $category = htmlspecialchars($data["kategori"]);
+    $year = htmlspecialchars($data["tahun_terbit"]);
     $synopsis = htmlspecialchars($data["sinopsis"]);
+    $category = htmlspecialchars($data["kategori"]);
     $pict = htmlspecialchars($data["gambar"]);
 
     $query = "UPDATE buku SET
-                title = '$title',
-                writer = '$writer',
-                numberOfPages = '$numberOfPages',
-                publisher = '$publisher',
-                year = '$year',
-                category = '$category',
-                synopsis = '$synopsis',
-                pict = '$pict'
-            WHERE id = $codeBook
+                nama_buku = '$title',
+                pengarang = '$writer',
+                jumlah_halaman = '$numberOfPages',
+                penerbit = '$publisher',
+                tahun_terbit = '$year',
+                sinopsis = '$synopsis',
+                kategori = '$category',
+                gambar = '$pict'
+            WHERE kode_buku = $codeBook
             ";
 
     mysqli_query($conn, $query);
@@ -121,10 +121,17 @@ function update($data)
     return mysqli_affected_rows($conn);
 }
 
-function delete($data)
+function deleteBook($codeBook)
 {
     global $conn;
-    mysqli_query($conn, "DELETE FROM buku WHERE kode_buku = $data");
+    mysqli_query($conn, "DELETE FROM buku WHERE kode_buku = $codeBook");
 
     return mysqli_affected_rows($conn);
 }
+
+// ********************* Functions Manage Users ********************* //
+function registerUser($data)
+{
+}
+
+// ********************* Functions Other Feature ********************* //
